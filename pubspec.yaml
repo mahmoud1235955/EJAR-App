@@ -1,0 +1,45 @@
+name: test_ejar
+description: "A new Flutter project."
+publish_to: 'none' # لو عايز تنشر على pub.dev شيل السطر ده
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  audioplayers: ^6.5.1
+  cloud_firestore: ^6.0.2
+  cupertino_icons: ^1.0.8
+  dio: ^5.9.0
+  firebase_auth: ^6.1.0
+  firebase_core: ^4.1.1
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_pretty_dio_logger: ^3.0.0
+  fluttertoast: ^8.2.12
+  google_maps_flutter: ^2.13.1
+  shared_preferences: ^2.5.3
+  sqflite: ^2.4.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+# إعدادات أيقونة التطبيق
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/img/vehicle.png"
+  adaptive_icon_background: "#ffffff" # خلفية الأيقونة (ممكن تحط صورة بدل كود لون)
+  adaptive_icon_foreground: "assets/img/vehicle.png" # الأيقونة الأمامية
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/
+    - assets/json/map.json
