@@ -6,7 +6,7 @@ import 'package:test_ejar/routes/routes.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
-
+//----------------------------------------------------------
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
